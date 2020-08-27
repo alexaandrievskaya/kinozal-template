@@ -1,4 +1,6 @@
-.header {
+.header,
+.main,
+.left-sidebar {
   @extend %margin-bottom-lg;
 }
 

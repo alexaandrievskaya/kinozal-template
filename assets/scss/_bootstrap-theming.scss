@@ -1,6 +1,6 @@
 .navbar-inverse {
   margin-bottom: 0;
-  background-color: darken($color-darkб 4%);
+  background-color: darken($color-dark, 4%);
   border: transparent;
 
   .navbar-nav {
@@ -57,6 +57,25 @@
   @include sm {
     margin-top: 0;
   }
+}
+
+.panel {
+  border: none;
+  background-color: darken($color-light, 8%);
+  margin-bottom: $gap * 2;
+
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.panel-info>.panel-heading {
+  color: $color-light;
+  background-color: $color-accent;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
 }
 
 
