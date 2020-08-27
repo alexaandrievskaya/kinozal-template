@@ -68,14 +68,18 @@
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
   }
+
+  &-info>.panel-heading {
+    color: $color-light;
+    background-color: $color-accent;
+    border: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
 }
 
-.panel-info>.panel-heading {
-  color: $color-light;
-  background-color: $color-accent;
-  border: none;
-  font-size: 1.2rem;
-  letter-spacing: 0.1em;
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 

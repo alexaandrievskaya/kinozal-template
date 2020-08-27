@@ -54,6 +54,10 @@
   letter-spacing: 0.1em;
 }
 
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
