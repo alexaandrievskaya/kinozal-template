@@ -54,6 +54,7 @@
   letter-spacing: 0.1em;
 }
 
+.input-lg,
 .input-group-lg > .form-control {
   font-size: 0.875rem;
 }
@@ -117,6 +118,28 @@ h1 {
 
 .vertical-slider img {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: none;
+}
+
+.user-login__tabs a {
+  padding: 14px 5px 11px !important;
+  color: #dddddd;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.user-login__tabs .active a {
+  color: #ffffff !important;
 }
 
 @media (min-width: 768px) {

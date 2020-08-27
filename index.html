@@ -119,7 +119,43 @@
         <div class="user-login panel panel-info">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
-            Body
+            <div>
+              <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#user-login-sidebar" aria-controls="home" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-log-in" title="Вход"></span>
+                </a></li>
+                <li role="presentation"><a href="#user-registration-sidebar" aria-controls="profile" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-user" title="Регистрация"></span>
+                </a></li>
+              </ul>
+              <div class="user-login__content tab-content">
+                <div role="tabpanel" class="tab-pane active" id="user-login-sidebar">
+                  <form action="login">
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="Логин">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="password" placeholder="Пароль">
+                    </div>
+                    <button class="btn btn-default btn-lg btn-block">Вход</button>
+                  </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="user-registration-sidebar">
+                  <form action="registration">
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="Логин">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="password" placeholder="Пароль">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="email" placeholder="Email">
+                    </div>
+                    <button class="btn btn-default btn-lg btn-block">Регистрация</button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
