@@ -8,6 +8,14 @@
   margin-bottom: 80.0px;
 }
 
+.main .site-search-title, .main .user-login-title {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 0;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+
 .navbar-inverse {
   margin-bottom: 0;
   background-color: #191919;
@@ -94,6 +102,10 @@ h1 {
   font-family: "PT Serif", serif;
 }
 
+h2 {
+  font-family: "PT Serif", serif;
+}
+
 .header-logo {
   padding: 100px 0;
   text-align: center;
@@ -117,6 +129,42 @@ h1 {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .site-search-title {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.main .user-login-title {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+.new-films-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+
+.new-films-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-bottom: 15px;
+}
+
+.new-films-item__thumbnail {
+  margin-bottom: 0;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -258,6 +306,13 @@ h1 {
           transform: translateY(-50%);
 }
 
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+    margin: -7.5px 0 45px;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a {
     border-radius: 4px;
@@ -279,5 +334,12 @@ h1 {
   }
   .navbar-right {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 30px;
   }
 }

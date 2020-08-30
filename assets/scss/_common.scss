@@ -19,4 +19,19 @@ a {
 
 h1 {
   font-family: $font-header;
+
+  @include xs-min {
+    font-size: 3rem;
+    margin: (-$gap / 2) 0 ($gap * 3);
+  }
+
+  @include xs {
+    font-size: 2rem;
+    margin: 0 0 ($gap * 2);
+  }
+
+}
+
+h2 {
+  font-family: $font-header;
 }

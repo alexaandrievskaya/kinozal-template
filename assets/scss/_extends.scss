@@ -5,3 +5,11 @@
 %margin-bottom-lg {
   margin-bottom: $gap * 5.33333333;
 }
+
+%panel-info-main {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 0;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
