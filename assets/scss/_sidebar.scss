@@ -35,3 +35,57 @@
     }
   }
 }
+
+.site-news {
+  &-item {
+    clear: both;
+    position: relative;
+
+    &:not(:last-of-type) {
+      min-height: 85px;
+      margin-bottom: $gap;
+
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: -5px;
+        width: calc(100% - 85px);
+        height: 1px;
+        background-color: $color-gray;
+      }
+    }
+
+    &:hover {
+      a {
+        color: $color-accent;
+      }
+
+      .thumbnail {
+        background-color: $color-accent;
+        border-color: $color-accent;
+      }
+    }
+
+    &__image {
+      float: left;
+      width: 75px;
+      margin: 0 10px 10px 0;
+    }
+
+    &__title{
+      margin-bottom: 10px;
+      a {
+        transition: color 0.25s;
+
+        @include block-shortener(1rem, 1.5, 50px, 2);
+      }
+    }
+
+    &__date{
+      text-align: right;
+      font-size: 0.8rem;
+      color: darken($color-gray, 30%);
+    }
+  }
+}
