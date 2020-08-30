@@ -114,6 +114,23 @@ h2 {
   font-family: "PT Serif", serif;
 }
 
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
 section {
   position: relative;
   overflow: hidden;
@@ -164,22 +181,26 @@ section {
   letter-spacing: 0.1em !important;
 }
 
+.top-week-row,
 .new-films-row {
   margin-left: -7.5px;
   margin-right: -7.5px;
   margin-bottom: -15px;
 }
 
+.top-week-item,
 .new-films-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
 }
 
+.top-week-item__image,
 .new-films-item__image {
   width: 100%;
 }
 
+.top-week-item__thumbnail,
 .new-films-item__thumbnail {
   margin-bottom: 0;
   -webkit-transition: background-color 0.25s;
@@ -187,10 +208,12 @@ section {
   transition: background-color 0.25s;
 }
 
+.top-week-item__caption,
 .new-films-item__caption {
   text-align: center;
 }
 
+.top-week-item__title,
 .new-films-item__title {
   display: block;
   overflow: hidden;
@@ -345,6 +368,10 @@ section {
   h1 {
     font-size: 3rem;
     margin: -7.5px 0 45px;
+  }
+  h2 {
+    margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
   }
 }
 
