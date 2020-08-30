@@ -102,8 +102,21 @@ h1 {
   font-family: "PT Serif", serif;
 }
 
+h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
 h2 {
   font-family: "PT Serif", serif;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
 }
 
 .header-logo {
@@ -163,8 +176,30 @@ h2 {
   margin-bottom: 15px;
 }
 
+.new-films-item__image {
+  width: 100%;
+}
+
 .new-films-item__thumbnail {
   margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.new-films-item__caption {
+  text-align: center;
+}
+
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .left-sidebar .panel:last-of-type {
