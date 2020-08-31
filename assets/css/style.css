@@ -79,6 +79,17 @@
   transition: background-color 0.25s;
 }
 
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.well {
+  border-color: #dddddd;
+  background-color: #f1f1f1;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -267,6 +278,31 @@ p {
   -webkit-transition: color 0.25s;
   -o-transition: color 0.25s;
   transition: color 0.25s;
+}
+
+.film-info {
+  font-size: 1.2em;
+}
+
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-info__wrapper {
+  white-space: nowrap;
+}
+
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.film-comment-form__button {
+  float: right;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -494,5 +530,9 @@ p {
   h1 {
     font-size: 2rem;
     margin: 0 0 30px;
+  }
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
   }
 }
