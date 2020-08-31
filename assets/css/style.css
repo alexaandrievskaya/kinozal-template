@@ -408,6 +408,35 @@ p {
           transform: translateY(-50%);
 }
 
+.footer {
+  padding-top: 45px;
+  color: #fbfbfb;
+  background-color: #232323;
+}
+
+.footer .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: #777777;
+}
+
+.footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer-fifth a {
+  color: #fbfbfb;
+}
+
 @media (min-width: 576px) {
   h1 {
     font-size: 3rem;
@@ -431,6 +460,21 @@ p {
   }
   .navbar-right li {
     margin: 5px 0 5px 5px;
+  }
+  .footer .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer .container {
+    width: 1170px;
   }
 }
 

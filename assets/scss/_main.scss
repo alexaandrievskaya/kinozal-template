@@ -67,36 +67,39 @@
   }
 }
 
-.film-news-item {
-  &__image {
-    width: 100%;
-  }
+.film-news {
 
-  &__text {
-    text-align: justify;
-  }
-
-  &__button {
-    float: right;
-    margin-bottom: $gap * 2;
-    transition: background-color 0.25s;
-  }
-
-  &:hover {
-    .thumbnail {
-      background-color: #f0ad4f;
+  &-item {
+    &__image {
+      width: 100%;
     }
 
+    &__text {
+      text-align: justify;
+    }
+
+    &__button {
+      float: right;
+      margin-bottom: $gap * 2;
+      transition: background-color 0.25s;
+    }
+
+    &:hover {
+      .thumbnail {
+        background-color: #f0ad4f;
+      }
+
+      h3 > a {
+        color: $color-accent;
+      }
+
+      .btn-warning {
+        background-color: $color-accent;
+      }
+    }
     h3 > a {
-        color: #df8a13;
+      transition: color 0.25s;
     }
-
-    .btn-warning {
-      background-color: #df8a13;
-    }
-  }
-  h3 > a {
-    transition: color 0.25s;
   }
 }
 
